@@ -1,0 +1,67 @@
+<div class="container hcenter">
+    <h2>Votre panier</h2>
+    <div class="list">
+        <div class="title row vcenter hcenter">
+            <div>
+                <p>Image Product</p>
+            </div>
+            <div>
+                <p>Name Product</p>
+            </div>
+            <div>
+                <p>Référence</p>
+            </div>
+            <div>
+                <p>Prix unitaire HT (€)</p>
+            </div>
+            <div>
+                <p>Quantité</p>
+            </div>
+            <div>
+                <p>Prix Total (€)</p>
+            </div>
+            <div>
+
+            </div>
+        </div>
+        <div class="item row hcenter" *ngFor="let produit of panier">
+            <div class="vcenter">
+                <img [src]="produit.images[0]" alt="product_Image" class="Pimage">
+            </div>
+            <div>
+                <p>{{produit.nom}}</p>
+            </div>
+            <div>
+                <p>{{produit.ref}}</p>
+            </div>
+            <div>
+                <p>{{produit.prix}}</p>
+            </div>
+            <div>
+                <p>{{produit.acheter}}</p>
+            </div>
+            <div>
+                <p>{{produit.acheter * produit.prix }}</p>
+            </div>
+            <div class="vcenter" (click)="deleteProduit(produit.ref)">
+                <img src="../../../assets/delete.svg" alt="delete_icon" class="icon padding05">
+            </div>
+        </div>
+        <div class="row vcenter">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="hcenter">
+                <p>Total à payer (€)</p>
+            </div>
+            <div class="hcenter">
+                <p id="total">{{total}}</p>
+            </div>
+            <div></div>
+        </div>
+    </div>
+    <div class="buy">
+        <p>Valider ma commande</p>
+    </div>
+</div>

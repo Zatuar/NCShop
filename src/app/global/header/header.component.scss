@@ -1,0 +1,32 @@
+.content {
+    position: relative;
+    width: auto;
+    background-color: white;
+    color: purple;
+}
+.logo {
+    width: 10%;
+    height: auto;
+    margin: 0;
+}
+.imgLogo {
+    height: 100%;
+    width: 100%;
+}
+.searchCadre {
+    position: relative;
+    border-radius: 50em;
+    background-color: #f5f5f5;
+}
+.searchCadre input {
+    border: none;
+    border-radius: 50em;
+    color: purple;
+    background-color: #f5f5f5;
+}
+.searchCadre input::placeholder{
+    color: purple;
+}
+input:focus {
+    outline: none;
+}

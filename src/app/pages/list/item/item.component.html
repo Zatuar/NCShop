@@ -1,0 +1,17 @@
+<section class="row container padding05">
+    <div *ngFor="let product of products" class="item margin05 hcenter">
+        <div [routerLink]="['/product', product.ref]">
+            <span *ngIf="product.nouveau" class="badge">NEW</span>
+            <img [src]="product.images[0]" class="Iproduit"/>
+            <div>
+                <p>{{product.nom}}</p>
+            </div>
+            <div>
+                <p>{{product.prix}}€ HT</p>
+            </div>
+        </div>
+        <div (click)="buy(product.ref)" class="btn vcenter hcenter">
+            <img src="../../../assets/buy.svg" alt="ic_profil" class="icon padding05">
+        </div>
+    </div>
+</section>

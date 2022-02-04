@@ -1,0 +1,18 @@
+<section class="diapo">
+        <h2>Actualités</h2>
+        <div class="elements">
+            <!-- Première diapo -->
+            <div *ngFor="let actuality of actualities" class="element active" [ngStyle]="{ 'background-image': 'url(' + actuality.img + ')'}">
+                <div class="caption">
+                    <h2>{{actuality.title}}</h2>
+                    <p>zemouvgzrmoezbmgorjzm</p>
+                </div>
+            </div>
+        </div>
+        <i id="nav-droite">
+            <img src="../../../../assets/greater-than.svg" alt="" class="icon purple" />
+        </i>
+        <i id="nav-gauche">
+            <img src="../../../../assets/less-than.svg" alt="" class="icon purple" />
+        </i>
+</section>

@@ -1,0 +1,35 @@
+.container {
+    position: relative;
+}
+.item {
+    position: relative;
+    width: 13%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 2em 0 2em 2em;
+}
+.item:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.badge{
+    position: absolute;
+    color: #003B67;
+    background-color: #ffffffb9;
+    box-shadow: inset 0px 0px 6px 6px #e0e0e09a;
+    font-weight: bold;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 1.25rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -10px;
+    right: -10px;
+    z-index: 2;
+}
+.Pimage {
+    width: 100%;
+}

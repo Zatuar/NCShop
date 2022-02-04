@@ -1,0 +1,35 @@
+.diapo {
+    overflow: hidden;
+    position: relative;
+}
+#nav-droite, #nav-gauche{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: purple;
+}
+#nav-droite{
+    right: 5px;
+}
+#nav-gauche{
+    left: 5px;
+}
+
+.elements{
+    display: flex;
+    transition: 1s linear;
+    height: 30rem;
+}
+.element{
+    position: relative;
+    flex: 1 0 100%;
+    display: flex;
+    align-items: center;
+    background-size: 100% 100%;
+}
+.caption{
+    position: absolute;
+    background-color: rgba(255,255,255,0.2);
+    padding: 30px;
+    border-radius: 0 50em 50em 0;
+}

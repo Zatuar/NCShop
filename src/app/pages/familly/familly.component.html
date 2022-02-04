@@ -1,0 +1,18 @@
+<section class="container">
+    <div>
+        <h2>{{family}}</h2>
+        <p>Cette page est un descriptif de la famille de produit selectionnée</p>
+        <h3>Sous-famille</h3>
+    </div>
+    <div class="row">
+        <div class="Sfamily margin05 padding05" *ngFor="let ssfamily of sfamily">
+            <div [routerLink]="[ssfamily,'list']">
+            <img src="../../../favicon.ico" alt="front">
+            <div class="title">
+                {{ssfamily}}
+            </div>
+
+            </div>
+        </div>
+    </div>
+</section>

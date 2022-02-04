@@ -1,0 +1,12 @@
+<nav id="wrap">
+    <div class="navbar">
+      <div class="famille" *ngFor="let category of categoryL">
+        <a [routerLink]="[category.name]">{{category.name}}</a>
+        <div class="enfants">
+            <div class="enfant" *ngFor="let under of category.sfamily">
+                <a href="/produit" [routerLink]="[category.name,under,'list']">{{under}}</a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </nav>

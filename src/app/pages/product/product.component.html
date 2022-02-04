@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="row">
+        <div class="Pimage vcenter hcenter">
+            <img [src]="produit.images[0]" class="Iproduit"/>
+        </div>
+        <div>
+            <h2>{{produit.nom}}</h2>
+            <p>{{produit.prix}} €HT</p>
+            <p>Vendu par {{produit.quantite}}</p>
+            <div class="row">
+                <div class="margin05">
+                    <img src="../../../assets/minus-sign.svg" alt="minus-sign" (click)="minus()">
+                </div>
+                <input type="text" [value]="qt" class="qt margin05">
+                <div class="margin05">
+                    <img src="../../../assets/plus-sign.svg" alt="plus-sign" (click)="plus()">
+                </div>
+            </div>
+            <div (click)="buy(produit.ref)" class="btn vcenter hcenter">
+                <img src="../../../assets/buy.svg" alt="ic_profil" class="icon padding05">
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2>Description</h2>
+        <p>{{produit.descriptif}}</p>
+    </div>
+    <div>
+        <h2>Caractéristique</h2>
+        <p>Martériaux : {{produit.materiaux}}</p>
+        <p *ngIf="produit.dimensions.length == 3">Dimension : {{produit.dimensions[0]}} x {{produit.dimensions[1]}} x H{{produit.dimensions[2]}}cm</p>
+        <p *ngIf="produit.dimensions.length == 2">Dimension : ø{{produit.dimensions[0]}} x H{{produit.dimensions[1]}}cm</p>
+    </div>
+</div>

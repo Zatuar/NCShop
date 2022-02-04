@@ -1,0 +1,8 @@
+<div class="container">
+    <div *ngFor="let filtre of filtres">
+        <h4>{{filtre.name}}</h4>
+        <div *ngFor="let option of filtre.options">
+        <input type="checkbox" name="option"> {{option}}
+        </div>
+    </div>
+</div>

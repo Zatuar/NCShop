@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row detail vcenter hcenter">
+        <div class="Pimage margin05">
+            <img [src]="client.logo" alt="front" class="logoClient">
+        </div>
+        <div *ngIf="client.type" class="contact">
+                <h2>{{client.enseigne}}</h2>
+                <p>{{client.ap}}</p>
+                <p>SIRET : {{client.siret}}</p>
+                <p>TVA : {{client.tva}}</p>
+                <p>RIB : {{client.rib}}</p>
+                <p>{{client.rs}}</p>
+        </div>
+        <div *ngIf="!client.type" class="contact">
+            <h2>{{client.nom}} {{client.prenom}}</h2>
+            <p>{{client.email}}</p>
+            <p>{{client.phone}}</p>
+        </div>
+    </div>
+    <div class="row info">
+        <div *ngIf="client.type">
+            <h2>Notre Contact chez vous</h2>
+            <p>M./Mme {{client.nom}} {{client.prenom}}</p>
+            <p>{{client.email}}</p>
+            <p>{{client.phone}}</p>
+        </div>
+        <div class="champ">
+            <h2>Détails pour la livraison</h2>
+            <p>Adresse de livraison</p>
+            <p>{{client.delivery}}</p>
+            <p>Heures de livraison : {{client.heures}}h{{client.minutes}}min</p>
+            <p>Adresse de facturation</p>
+            <p>{{client.facture}}</p>
+        </div>
+    </div>
+    <div class=" row btnEdit">
+        <div class="row">
+                <img src="../../../assets/edit-box.svg" alt="editprodil"><p>Modifier mes informations</p>
+        </div>
+    </div>
+</div>

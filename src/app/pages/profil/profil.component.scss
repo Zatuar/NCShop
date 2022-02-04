@@ -1,0 +1,31 @@
+.container {
+}
+.Pimage {
+    display: flex;
+    align-items: center;
+    width: 15%;
+    margin: 1rem;
+
+}
+.logoClient {
+    width: 100%;
+}
+.contact {
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: start;
+}
+.info {
+    justify-content: space-around;
+}
+.btnEdit {
+    justify-content: center;
+}
+.btnEdit div {
+    padding-inline: .5rem;
+    background-color: #444444;
+    color: white;
+}
+.btnEdit img {
+    margin-right: 1rem;
+}

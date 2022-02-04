@@ -1,0 +1,26 @@
+.container {
+}
+.title {
+    background-color: darkgray;
+}
+.list div div {
+    margin-inline: 1rem;
+    width: 14.5%;
+}
+.Pimage {
+    width: 100%;
+}
+.item {
+    align-items: center;
+}
+.buy {
+    width: fit-content;
+    margin-inline: auto;
+    margin-top: 2rem;
+    padding: .2rem 1.5rem;
+    background-color: purple;
+    color: white;
+    font-size: large;
+    font-weight: bolder;
+    border-radius: 2rem;
+}

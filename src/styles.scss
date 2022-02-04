@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+}
+.row {
+    display: flex;
+}
+.vcenter {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.hcenter {
+    text-align: center;
+    justify-content: center;
+}
+.sb {
+    justify-content: space-between;
+}
+.padding05 {
+    padding: .5rem;
+}
+.margin05 {
+    margin: .5rem;
+    height: auto;
+}
+
+.icon {
+    max-width: 2rem;
+    height: auto;
+}
+.rounded {
+    border-radius: 50em;
+}

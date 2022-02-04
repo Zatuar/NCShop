@@ -1,0 +1,16 @@
+<section>
+    <h2>Nos Promotions du moment</h2>
+    <div class="row container">
+        <div class="item margin05 hcenter"  *ngFor="let soldProduct of soldProducts">
+            <span class="badge">-{{soldProduct.reduction}}%</span>
+            <img [src]="soldProduct.images[0]" class="Pimage"/>
+            <div>
+                <p>{{soldProduct.nom}}</p>
+                <p>{{soldProduct.ref}}</p>
+            </div>
+            <div>
+                <p>{{soldProduct.prix}}€ HT</p>
+            </div>
+        </div>
+    </div>
+</section>
